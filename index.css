@@ -1,0 +1,97 @@
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&family=Roboto:wght@300&display=swap");
+/* ----------------------------------- */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --bg-color: #1f242d;
+  --second-bg-color: #323946;
+  --text-color: #fff;
+  --main-color: #0ef;
+  --box-shadow: 0 0 1rem var(var(--main-color));
+}
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background-color: var(--bg-color);
+}
+
+.contact h2 {
+  font-size: 40px;
+  text-align: center;
+  color: var(--text-color);
+  margin-bottom: 10px;
+}
+.contact form {
+  width: 600px;
+  text-align: center;
+}
+form .input-box {
+  display: flex;
+  justify-content: space-between;
+}
+.input-box .input-field {
+  width: 48.5%;
+}
+.field .error-text {
+  font-size: 14.5px;
+  color: rgb(206, 41, 41);
+  text-align: left;
+  margin: -5px 0 10px;
+  display: none;
+}
+.field.error .error-text {
+  display: block;
+}
+.field.error .item {
+  border-color: red;
+}
+.field .item {
+  width: 100%;
+  padding: 18px;
+  background: transparent;
+  border: 2px solid var(--main-color);
+  outline: none;
+  border-radius: 6px;
+  margin: 12px 0;
+  font-size: 16px;
+  color: grey;
+}
+.field .item::placeholder {
+  color: rgba(255, 255, 255, 0.3);
+}
+form .textarea-field .item {
+  resize: none;
+}
+form .textarea-field .error-text {
+  margin-top: -10px;
+}
+/* --------------------btn--------------- */
+.btn {
+  display: inline-block;
+  padding: 12px 32px;
+  border: none;
+  outline: none;
+  background: var(--main-color);
+  border-radius: 6px;
+  box-shadow: 0 0 1rem var(--main-color);
+  font-size: 16px;
+  color: var(--second-bg-color);
+  letter-spacing: 0.1rem;
+  font-weight: 600;
+  transition: 0.5s ease;
+  opacity: 1;
+  animation: slidetop 1s ease forwards;
+  animation-delay: 2s;
+  cursor: pointer;
+  margin-top: 10px;
+}
+.btn:hover {
+  box-shadow: none;
+}
